@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ireland-code-pkg"
+version = "0.1.4"
+authors = [{ name = "Aryan Kumar", email = "x23310618@student.ncirl.ie" }]
+description = "A library for Irish counties and Eircodes in Django."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["Django>=3.2"]
+
+classifiers = [
+    "Framework :: Django",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["ireland_code_pkg"]
